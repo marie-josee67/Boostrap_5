@@ -1,0 +1,7 @@
+sources:
+
+    https://getbootstrap-com.translate.goog/docs/5.3/layout/grid/?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=fr ==> doc grill
+
+    https://getbootstrap.com/docs/5.0/utilities/background/ ==> doc bg 
+
+    https://getbootstrap.com/docs/5.0/layout/gutters/ ==> doc gouttière
