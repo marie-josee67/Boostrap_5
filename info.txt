@@ -8,4 +8,4 @@ sources:
 
     https://icons.getbootstrap.com ==> icons
 
-    
+    https://getbootstrap.com/docs/5.0/components/progress/ ==> différent progress barre
