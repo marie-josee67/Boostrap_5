@@ -5,3 +5,7 @@ sources:
     https://getbootstrap.com/docs/5.0/utilities/background/ ==> doc bg 
 
     https://getbootstrap.com/docs/5.0/layout/gutters/ ==> doc gouttière
+
+    https://icons.getbootstrap.com ==> icons
+
+    

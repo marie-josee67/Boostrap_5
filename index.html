@@ -23,16 +23,43 @@
 </head>
 <body>
     <header>
-    <nav class="bg-light">
-        <div class="container">
-            <div class="bg-secondary py-4 w-100"></div> <!-- padding de 4-->
-        </div>
-    </nav>
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold" href="/index.html">
+                    <span class="bg-primary bg-gradient p-1 rounded-3 text-light">John</span> Doe
+                </a>
+
+                <!-- bouton burger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- onglet + onglet burger -->
+                <div class="collapse navbar-collapse justify-content-end" 
+                id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#johndoe">Qui suis-je ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#expertise">Expertises</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+        </nav>
     </header>
+
     <main>
 
         <!-- ************************* Présentation **************************-->
-        <section id="johndoe" class="my-5"> <!-- margin de 2 en haut et en bas-->
+        <section id="johndoe" class="my-5"> <!-- margin de 5 en haut et en bas-->
             <div class="container">
 
                 <div class="row gy-4 gy-md-0 align-items-center">
@@ -52,7 +79,7 @@
         </section>
 
         <!-- *********************** Compétences ************************-->
-        <section class="py-5 bg-light">
+        <section id="expertise" class="py-5 bg-light">
             <div class="container">
 
                 <h2 class="mb-0">Mon expertise</h2>
@@ -122,7 +149,7 @@
                     </div>
 
                     <div class="col-12 offset-1 col-md-6">
-                        <div class="bg-secondary h-100 w-100"></div>
+                        <div class="bg-secondary h-100 w-100 py-5"></div>
                     </div>
                 </div>
             </div>
@@ -133,14 +160,14 @@
         <div class="container py-5">
           <div class="row gy-4 align-items-center">
             <div class="col-12 col-md-4">
-              <a class="navbar-brand text-dark text-uppercase fw-bold" href="#">
+                <a class="navbar-brand text-dark text-uppercase fw-bold" href="#">
                 <span class="bg-primary bg-gradient p-1 rounded-3 text-light">John</span> Doe
               </a>
             </div>
             <div class="col-12 col-md-4 text-md-center">
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#" class="text-decoration-none text-dark">&copy;2023_Portfolio_cours_Boostrap_Openclassrooms</a>
+                    <a href="#" class="text-decoration-none text-dark">&copy;2023_Portfolio_cours_Boostrap_Openclassrooms</a>
                 </li>
               </ul>
             </div>
@@ -153,7 +180,7 @@
                   <a href="#" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-decoration-none text-dark"><i class="bi bi-twitter-x"></i></a>
                 </li>
               </ul>
             </div>
