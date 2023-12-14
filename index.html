@@ -273,66 +273,274 @@
 
         <!-- **************************** Portfolio *****************************-->
         <section id="portfolio" class="py-5">
-            <div class="container">
-                <h2 class="mb-0">Mon portfolio</h2>
-                <h3 class="fw-light fs-5">Projets perso et pro</h3>
+          <div class="container">
+              <h2 class="mb-0">Mon portfolio</h2>
+              <h3 class="fw-light fs-5">Projets perso et pro</h3>
 
-                <div class="row gy-4 mt-4">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="bg-secondary h-100 w-100 py-5" py-5>
-                          <div class="card">
-                            <img src="https://picsum.photos/300/150?random=4" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Projet 1</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                                <a href="#" class="btn btn-primary">En savoir plus</a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="bg-secondary h-100 w-100 py-5" py-5>
-                          <div class="card">
-                            <img src="https://picsum.photos/300/150?random=3" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Projet 2</h5>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary">En savoir plus</a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="bg-secondary h-100 w-100 py-5" py-5>
-                          <div class="card">
-                            <img src="https://picsum.photos/300/150?random=2" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Porjet 3</h5>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary">En savoir plus</a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="bg-secondary h-100 w-100 py-5" py-5>
-                          <div class="card">
-                            <img src="https://picsum.photos/300/150?random=1" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Projet 4</h5>
-                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-primary">En savoir plus</a>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+              <div class="row gy-4 gy-md-0 mt-4">
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                          <img src="https://picsum.photos/300/150?random=1" class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <h5 class="card-title">Projet 1</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                  sollicitudin.</p>
+                              <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+                                 aria-controls="infoProjet1">En savoir plus</a>
+                          </div>
+                          <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
+                               aria-labelledby="titelProjet1">
+                              <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="titelProjet1">Projet 1</h5>
+                                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                  <!-- Carousel -->
+                                  <div id="carouselProject1" class="carousel slide shadow h-100"
+                                       data-bs-ride="carousel" data-bs-touch="true">
+                                      <div class="carousel-inner h-100">
+                                          <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                              <img src="https://picsum.photos/1920/1080?random=1"
+                                                   class="d-block w-100" alt="Image slide 1">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 1</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item h-100" data-bs-interval="2000">
+                                              <img src="https://picsum.photos/1920/1080?random=2"
+                                                   class="d-block w-100" alt="Image slide 2">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 2</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item h-100">
+                                              <img src="https://picsum.photos/1920/1080?random=3"
+                                                   class="d-block w-100" alt="Image slide 3">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 3</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                              data-bs-target="#carouselProject1" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                              data-bs-target="#carouselProject1" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                          <img src="https://picsum.photos/300/150?random=2" class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <h5 class="card-title">Projet 2</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                  sollicitudin.</p>
+                              <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet2"
+                                 aria-controls="infoProjet2">En savoir plus</a>
+                          </div>
+                          <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet2"
+                               aria-labelledby="titelProjet2">
+                              <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="titelProjet1">Projet 2</h5>
+                                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                  <!-- Carousel -->
+                                  <div id="carouselProject2" class="carousel slide shadow h-100"
+                                       data-bs-ride="carousel" data-bs-touch="true">
+                                      <div class="carousel-inner h-100">
+                                          <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                              <img src="https://picsum.photos/1920/1080?random=4"
+                                                   class="d-block w-100" alt="Image slide 1">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 1</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item h-100" data-bs-interval="2000">
+                                              <img src="https://picsum.photos/1920/1080?random=5"
+                                                   class="d-block w-100" alt="Image slide 2">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 2</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item h-100">
+                                              <img src="https://picsum.photos/1920/1080?random=6"
+                                                   class="d-block w-100" alt="Image slide 3">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 3</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                              data-bs-target="#carouselProject2" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                              data-bs-target="#carouselProject2" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                          <img src="https://picsum.photos/300/150?random=3" class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <h5 class="card-title">Projet 3</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                  sollicitudin.</p>
+                              <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet3"
+                                 aria-controls="infoProjet3">En savoir plus</a>
+                          </div>
+                          <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet3"
+                               aria-labelledby="titelProjet3">
+                              <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="titelProjet1">Projet 3</h5>
+                                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                  <!-- Carousel -->
+                                  <div id="carouselProject3" class="carousel slide shadow h-100"
+                                       data-bs-ride="carousel" data-bs-touch="true">
+                                      <div class="carousel-inner h-100">
+                                          <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                              <img src="https://picsum.photos/1920/1080?random=7"
+                                                   class="d-block w-100" alt="Image slide 1">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 1</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item h-100" data-bs-interval="2000">
+                                              <img src="https://picsum.photos/1920/1080?random=8"
+                                                   class="d-block w-100" alt="Image slide 2">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 2</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item h-100">
+                                              <img src="https://picsum.photos/1920/1080?random=9"
+                                                   class="d-block w-100" alt="Image slide 3">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 3</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                              data-bs-target="#carouselProject3" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                              data-bs-target="#carouselProject3" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card">
+                          <img src="https://picsum.photos/300/150?random=4" class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <h5 class="card-title">Projet 4</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                  sollicitudin.</p>
+                              <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet4"
+                                 aria-controls="infoProjet4">En savoir plus</a>
+                          </div>
+                          <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet4"
+                               aria-labelledby="titelProjet4">
+                              <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="titelProjet1">Projet 4</h5>
+                                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body">
+                                  <!-- Carousel -->
+                                  <div id="carouselProject4" class="carousel slide shadow h-100"
+                                       data-bs-ride="carousel" data-bs-touch="true">
+                                      <div class="carousel-inner h-100">
+                                          <div class="carousel-item h-100 active" data-bs-interval="10000">
+                                              <img src="https://picsum.photos/1920/1080?random=10"
+                                                   class="d-block w-100" alt="Image slide 1">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 1</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item h-100" data-bs-interval="2000">
+                                              <img src="https://picsum.photos/1920/1080?random=11"
+                                                   class="d-block w-100" alt="Image slide 2">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 2</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                          <div class="carousel-item h-100">
+                                              <img src="https://picsum.photos/1920/1080?random=12"
+                                                   class="d-block w-100" alt="Image slide 3">
+                                              <div class="carousel-caption d-none d-md-block">
+                                                  <h5>Slide 3</h5>
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                                                      sollicitudin.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                              data-bs-target="#carouselProject4" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                              data-bs-target="#carouselProject4" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
         <!-- **************************** Contact *****************************-->
         <section id="contact" class="py-5 bg-light">
