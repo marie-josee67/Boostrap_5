@@ -127,7 +127,9 @@
                 <div class="row align-items-center">
                   <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                     <div class="d-flex align-items-center">
-                      <i class="fab fa-js fa-2x me-3 text-primary"></i>
+                      <!-- tooltip sur l'icon -->
+                      <i class="fab fa-js fa-2x me-3 text-primary" data-bs-toggle="tooltip"
+                      title="JavaScript"></i>
                       <p class="fw-bold m-0">JS</p>
                     </div>
                   </div>
@@ -145,7 +147,7 @@
                   <div class="col-5 col-sm-4 col-lg-3 col-xl-2">
                     <div class="d-flex align-items-center">
                       <i class="fab fa-php fa-2x me-3 text-primary"></i>
-                      <p class="fw-bold m-0">PHP</p>
+                      <p class="fw-bold m-0" >PHP</p>
                     </div>
                   </div>
                   <div class="col">
@@ -603,8 +605,8 @@
               <div class="col-12 col-md-4 text-md-end">
                   <ul class="list-inline mb-0">
                       <li class="list-inline-item">
-                          <a href="#" class="text-decoration-none text-dark" data-bs-toggle="tooltip"
-                             title="LinkedIn">
+                          <a href="#" class="text-decoration-none text-dark" data-bs-toggle="tooltip" 
+                             title="LinkedIn"> <!-- tooltip ==> indique de quel icon il s'agit -->
                               <i class="fab fa-linkedin fa-2x"></i>
                           </a>
                       </li>
@@ -674,7 +676,7 @@
               crossorigin="anonymous">
       </script>
 
-      <!--  -->
+      <!-- tooltip -->
       <script>
           var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
           var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
